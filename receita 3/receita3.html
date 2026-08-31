@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="estilo.css">
+   </head>
+
+   <body>
+      <div id="divBotao">
+         <button id="botaoCarregar">Carregando cervejas...</button>
+      </div>
+
+      <div id="divCerveja"></div>
+
+      <script>
+         let cervejaVisivel = false
+
+         function carregarDiv(){
+            let div = document.getElementById("divCerveja")
+
+            div.style.opacity = 0
+
+            setTimeout(function(){
+               if (!cervejaVisivel) {
+                  div.innerHTML = `<h1>Guinness</h1>`
+               } else {
+                  div.innerHTML = ""
+               }
+
+               cervejaVisivel = !cervejaVisivel
+               div.style.opacity = 1
+            }, 500)
+         }
+
+         let botao = document.getElementById("botaoCarregar")
+         botao.addEventListener("click", carregarDiv)
+      </script>
+   </body>
+</html>

@@ -1,0 +1,31 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #fdf6e3;
+   text-align: center;
+   padding-top: 60px;
+}
+ 
+#botaoCarregar {
+   background-color: #6f4e37;
+   color: #ffffff;
+   border: none;
+   padding: 12px 24px;
+   font-size: 16px;
+   border-radius: 6px;
+   cursor: pointer;
+}
+ 
+#botaoCarregar:hover {
+   background-color: #5a3e2b;
+}
+ 
+#divCerveja {
+   transition: opacity 0.5s;
+   opacity: 1;
+   margin-top: 30px;
+}
+ 
+#divCerveja h1 {
+   color: #b8860b;
+   font-size: 40px;
+}
