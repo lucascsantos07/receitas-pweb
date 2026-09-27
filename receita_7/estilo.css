@@ -1,0 +1,162 @@
+body {
+   font-family: 'Segoe UI', Arial, sans-serif;
+   background: linear-gradient(135deg, #e0f7fa 0%, #f1f8ff 100%);
+   text-align: center;
+   padding-top: 50px;
+   margin: 0;
+   color: #1e293b;
+}
+
+h1 {
+   margin-bottom: 30px;
+   color: #0f766e;
+}
+
+section {
+   margin-bottom: 60px;
+}
+
+section h2.titulo-secao {
+   color: #0f766e;
+   font-size: 22px;
+   margin-bottom: 16px;
+}
+
+button {
+   background-color: #0f766e;
+   color: #ffffff;
+   border: none;
+   padding: 12px 28px;
+   font-size: 16px;
+   font-weight: bold;
+   border-radius: 8px;
+   cursor: pointer;
+   margin-bottom: 30px;
+   transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+button:hover {
+   background-color: #0b5a54;
+   transform: translateY(-2px);
+}
+
+#usuariosDiv, #postsDiv {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 20px 20px 20px;
+}
+
+.usuario-card, .post-card {
+   background-color: #ffffff;
+   border-radius: 14px;
+   box-shadow: 0 6px 16px rgba(15, 118, 110, 0.15);
+   padding: 22px 26px;
+   width: 260px;
+   text-align: left;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+   border-top: 5px solid #0f766e;
+}
+
+.usuario-card:hover, .post-card:hover {
+   transform: translateY(-6px);
+   box-shadow: 0 12px 24px rgba(15, 118, 110, 0.25);
+}
+
+.usuario-card h2 {
+   margin: 0 0 4px 0;
+   font-size: 20px;
+   color: #0f766e;
+}
+
+.usuario-card .username {
+   margin: 0 0 14px 0;
+   font-size: 13px;
+   color: #94a3b8;
+}
+
+.usuario-card p, .post-card p {
+   margin: 6px 0;
+   font-size: 14px;
+   line-height: 1.4;
+   color: #334155;
+}
+
+.usuario-card p strong {
+   color: #334155;
+}
+
+.usuario-card a {
+   color: #0f766e;
+   text-decoration: none;
+}
+
+.usuario-card a:hover {
+   text-decoration: underline;
+}
+
+.post-card {
+   width: 280px;
+}
+
+.post-card .post-id {
+   display: inline-block;
+   background-color: #0f766e;
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: bold;
+   padding: 3px 10px;
+   border-radius: 12px;
+   margin-bottom: 10px;
+}
+
+.post-card h3 {
+   margin: 0 0 10px 0;
+   font-size: 17px;
+   color: #0f766e;
+   text-transform: capitalize;
+}
+
+.post-card .post-user {
+   margin-top: 14px;
+   font-size: 13px;
+   color: #94a3b8;
+}
+
+table {
+   border-collapse: separate;
+   border-spacing: 0;
+   margin: 0 auto 40px auto;
+   min-width: 500px;
+   overflow: hidden;
+   border-radius: 12px;
+   box-shadow: 0 6px 16px rgba(15, 118, 110, 0.15);
+}
+
+th {
+   background-color: #0f766e;
+   color: #ffffff;
+   padding: 12px 24px;
+   font-size: 15px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+td {
+   padding: 10px 24px;
+   font-size: 15px;
+   background-color: #ffffff;
+   border-bottom: 1px solid #e2e8f0;
+   color: #334155;
+}
+
+tr:nth-child(even) td {
+   background-color: #f8fafc;
+}
+
+tr:hover td {
+   background-color: #e0f2f1;
+}
