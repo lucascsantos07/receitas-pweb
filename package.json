@@ -1,0 +1,25 @@
+{
+  "name": "receitass-pweb",
+  "version": "1.0.0",
+  "description": "Exercícios da disciplina de Programação Web, cada um em sua própria pasta.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascsantos07/receitas-pweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/lucascsantos07/receitas-pweb/issues"
+  },
+  "homepage": "https://github.com/lucascsantos07/receitas-pweb#readme",
+  "dependencies": {
+    "next": "^16.4.0"
+  }
+}
