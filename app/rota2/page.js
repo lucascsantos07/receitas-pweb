@@ -1,10 +1,5 @@
-import { Forms } from "../page";
+import { Forms } from "./components";
 
 export default function Rota2() {
-  return (
-    <div>
-      <h1>Formulário</h1>
-      <Forms />
-    </div>
-  );
+  return <Forms />;
 }

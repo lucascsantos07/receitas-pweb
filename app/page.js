@@ -1,3 +1,6 @@
+import Link from 'next/link'
+
+/* Receita 13
 export default function Home(){
     return (
         <div>
@@ -9,28 +12,19 @@ export default function Home(){
             </div>
         </div>
     )
-}
+} */
 
-export function Forms() {
-  return (
-    <div>
-      <form>
-        <label>
-          Nome:
-          <input type="text" name="nome" />
-        </label>
-
-        <br />
-
-        <label>
-          Email:
-          <input type="email" name="email" />
-        </label>
-
-        <br />
-
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  );
+/* Receita 15 */
+export default function Home(){
+    return (
+        <div>
+            <div>
+                <h1>
+                    Viva Santana!
+                </h1>
+                <Link href="/rota1">Rota1</Link> <br/><br/>
+                <a href="/rota1">Rota 1, jeito antigo</a>
+            </div>
+        </div>
+    )
 }

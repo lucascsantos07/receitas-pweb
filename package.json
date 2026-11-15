@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/lucascsantos07/receitas-pweb#readme",
   "dependencies": {
-    "next": "^16.4.0"
+    "next": "^16.4.6"
   }
 }
