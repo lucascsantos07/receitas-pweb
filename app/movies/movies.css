@@ -40,3 +40,29 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.movie-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.movie-card img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}

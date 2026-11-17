@@ -1,4 +1,6 @@
 import './movies.css'
+import MovieForm from './movieSearch/movieForm'
+
 
 export default function RootLayout({ children }) {
     return (
@@ -7,8 +9,7 @@ export default function RootLayout({ children }) {
                 <header>
                     <h1>Movie Search</h1>
                     <nav>
-                        <a href="/">Início</a>
-                        <a href="/movies">Filmes</a>
+                        <MovieForm />
                     </nav>
                 </header>
 

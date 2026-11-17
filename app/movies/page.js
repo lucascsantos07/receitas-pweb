@@ -4,20 +4,17 @@ export default async function Home({searchParams}){
     const data = await res.json()
 
     return (
-        <div>
-            <div>
-                {data.Search?.map((m) => (
-                    <div key={m.imdbID}>
+        <div className="movies-grid">
+            {data.Search?.map((m) => (
+                <div className="movie-card" key={m.imdbID}>
+                    <img src={m.Poster} alt={m.Title} />
+
+                    <div>
                         <h2>{m.Title}</h2>
                         <p>{m.Year}</p>
-
-                        <img
-                            src={m.Poster}
-                            alt={`Poster do filme ${m.Title}`}
-                        />
                     </div>
-                ))}
-            </div>
+                </div>
+            ))}
         </div>
     )
 }
